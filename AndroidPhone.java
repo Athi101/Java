@@ -31,33 +31,24 @@ public class AndroidPhone {
 
 	
 	public static void main (String[] args) {
-			Scanner sc = new Scanner(System.in);
+			Scanner scan = new Scanner(System.in);
 			AndroidPhone ap = new AndroidPhone();
 			
 			ap.myAwesomePhone();
 			
-			int phonePrice = sc.nextInt();
-			int screenSize = sc.nextInt();
-			double thickness = sc.nextDouble();
-			boolean isAudioJackPresent = sc.nextBoolean();
-			String phoneName = sc.next();
-			String phoneBrand =sc.nextLine();
+			int phonePrice = scan.nextInt();
+			int screenSize = scan.nextInt();
+			double thickness = scan.nextDouble();
+			boolean isAudioJackPresent = scan.nextBoolean();
+			String phoneName = scan.next();
+			String phoneBrand =scan.nextLine();
 			ap.buildPhone(phonePrice,screenSize,thickness,isAudioJackPresent,phoneName
 						, phoneBrand);
 			
 			
 			
 			ap.myAwesomePhone();
-			sc.close();
-		
-			
-			
-			
-			
-			
-			
-			
-			
+			scan.close();	
 	}
 }
 
